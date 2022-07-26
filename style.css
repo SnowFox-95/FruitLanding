@@ -6,6 +6,7 @@
     --dark: #233506;
     --ligth: #FFF;
     --bg-color: #FFF9F2;
+    --secondary:#FF800B;
 
     /* Sizes */
     --content_width: 1170px;
@@ -21,10 +22,12 @@ body {
     background-color: #fff;
     color: var(--dark);
 }
+
 a {
     color: var(--dark);
     text-decoration: none;
 }
+
 /* Layout */
 .content {
 
@@ -38,10 +41,12 @@ a {
     justify-content: space-between;
     padding: 46px 0;
 }
-.header__actions{
+
+.header__actions {
     display: flex;
     align-items: center;
 }
+
 /* FirstScreen - Block 1 */
 .first-screen {
     position: relative;
@@ -65,9 +70,10 @@ a {
     width: 280%;
 }
 
-.menu a:not(:last-child){
+.menu a:not(:last-child) {
     margin-right: 46px;
 }
+
 /* UIElements */
 .logo {
     font-size: 36px;
@@ -75,5 +81,21 @@ a {
 }
 
 .logo span {
-    color: var(--primary);
+    color: var(--secondary);
+}
+
+/* Button */
+.button {
+    padding: 16px 22px;
+    background-color: var(--primary);
+    color: var(--ligth);
+    font-size: 18px;
+    line-height: 18px;
+    border-radius: 50px;
+}
+
+.button_ligth {
+    padding: 16px 22px;
+    background-color: var(--ligth);
+    color: var(--secondary);
 }
