@@ -6,7 +6,7 @@
     --dark: #233506;
     --ligth: #FFF;
     --bg-color: #FFF9F2;
-    --secondary:#FF800B;
+    --secondary: #FF800B;
 
     /* Sizes */
     --content_width: 1170px;
@@ -21,6 +21,7 @@ body {
     font-family: 'Fredoka', sans-serif;
     background-color: #fff;
     color: var(--dark);
+    font-size: 18px;
 }
 
 a {
@@ -45,6 +46,10 @@ a {
 .header__actions {
     display: flex;
     align-items: center;
+}
+
+.header__actions .button:not(:last-child) {
+    margin-right: 12px;
 }
 
 /* FirstScreen - Block 1 */
@@ -94,8 +99,8 @@ a {
     border-radius: 50px;
 }
 
-.button_ligth {
-    padding: 16px 22px;
+.button_light {
     background-color: var(--ligth);
     color: var(--secondary);
+
 }
