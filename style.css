@@ -21,13 +21,27 @@ body {
     background-color: #fff;
     color: var(--dark);
 }
-
+a {
+    color: var(--dark);
+    text-decoration: none;
+}
 /* Layout */
 .content {
+
     max-width: var(--content_width);
     padding: 0 16px;
 }
 
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 46px 0;
+}
+.header__actions{
+    display: flex;
+    align-items: center;
+}
 /* FirstScreen - Block 1 */
 .first-screen {
     position: relative;
@@ -40,22 +54,26 @@ body {
     bottom: 0;
     right: 0;
     width: 33%;
-    z-index: 0;
+    z-index: -1;
     background-color: var(--primary);
 }
 
 .first-screen__bg-segment img {
     position: absolute;
-    top: 0;
-    left: -174%;
+    top: 12%;
+    right: 0;
     width: 280%;
 }
 
+.menu a:not(:last-child){
+    margin-right: 46px;
+}
 /* UIElements */
 .logo {
     font-size: 36px;
     font-weight: 600;
 }
+
 .logo span {
     color: var(--primary);
 }
