@@ -91,6 +91,7 @@ a {
 
 /* Button */
 .button {
+    cursor: pointer;
     padding: 16px 22px;
     background-color: var(--primary);
     color: var(--ligth);
@@ -103,4 +104,14 @@ a {
     background-color: var(--ligth);
     color: var(--secondary);
 
+}
+.button_icon-square{
+    --size:50px;
+    padding: 0;
+    width: var(--size);
+    height: var(--size);
+    line-height: var(--size);
+    border-radius: 15px;
+    font-size: 20px;
+    text-align: center;
 }
