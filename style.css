@@ -99,12 +99,9 @@ a {
 }
 
 .first-screen__content {
-    max-width: 1200px;
+    max-width: 535px;
     margin: auto 0;
 }
-.first-screen__content > *:not(:last-child){
-    margin-bottom: 30px;
-} 
 .first-screen_title{
     font-size: 84px;
     line-height: 100px;
@@ -115,6 +112,8 @@ a {
 }
 .first-screen__description{
     line-height: 1.7em;
+    margin-top: 30px;
+    margin-bottom: 40px;
 }
 
 /* UIElements */
@@ -130,7 +129,8 @@ a {
 /* Button */
 .button {
     cursor: pointer;
-    display: inline-block;
+    display: inline-flex;
+    align-items: center;
     padding: 16px 22px;
     background-color: var(--primary);
     color: var(--ligth);
@@ -157,5 +157,5 @@ a {
     text-align: center;
 }
 .button_xl {
-    padding: 24px 40px;
+    padding: 22px 40px;
 }
