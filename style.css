@@ -72,10 +72,12 @@ a {
   
 
 }
+
 .first-screen > * {
   position: relative;
   z-index: 0;
 }
+
 .first-screen__bg-segment {
     position: absolute;
     top: 0;
@@ -101,7 +103,9 @@ a {
 .first-screen__content {
     max-width: 535px;
     margin: auto 0;
+    padding-bottom: 64px;
 }
+
 .first-screen_title{
     font-size: 84px;
     line-height: 100px;
@@ -110,11 +114,22 @@ a {
 .first-screen_title span{
     color:var(--primary);
 }
+
 .first-screen__description{
     line-height: 1.7em;
     margin-top: 30px;
     margin-bottom: 40px;
 }
+
+/* Products Block 2*/
+.products{
+ padding: 140px 0;
+}
+
+.products__cards{
+
+}
+
 
 /* UIElements */
 .logo {
@@ -131,6 +146,7 @@ a {
     cursor: pointer;
     display: inline-flex;
     align-items: center;
+    justify-content: center;
     padding: 16px 22px;
     background-color: var(--primary);
     color: var(--ligth);
@@ -143,9 +159,13 @@ a {
     background-color: var(--ligth);
     color: var(--secondary);
 }
+
 .button_with-icon i {
     font-size: 1.2em;
+    margin-left: 18px;
+
 }
+
 .button_icon-square{
     --size:50px;
     padding: 0;
@@ -156,6 +176,13 @@ a {
     font-size: 20px;
     text-align: center;
 }
+
 .button_xl {
     padding: 22px 40px;
+}
+
+/* Title */
+.title{
+    font-size: 70px;
+    line-height: 82px;
 }
