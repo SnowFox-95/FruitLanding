@@ -9,7 +9,7 @@
     --secondary: #FF800B;
 
     /* Sizes */
-    --content_width: 1170px;
+    --content_width: 1202px;
 }
 
 * {
@@ -35,7 +35,6 @@ a {
     width: 100%;
     padding: 0 16px;
     margin: 0 auto;
-    
 }
 
 .header {
@@ -123,11 +122,17 @@ a {
 
 /* Products Block 2*/
 .products{
- padding: 140px 0;
+    padding: 120px 0;
 }
 
 .products__cards{
-
+    display: flex;
+    flex-wrap: wrap;
+    margin: -14px;
+    margin-top: 50px;
+}
+.products__cards .card{
+    margin: 21px 14px;
 }
 
 
@@ -185,4 +190,43 @@ a {
 .title{
     font-size: 70px;
     line-height: 82px;
+    font-weight: 600;
+}
+/* Card */
+.card{
+    --size: 270px;
+    width: var(--size);
+}
+
+.card_img {
+    width: var(--size);
+    height: calc(var(--size) * 0.66);
+    border-radius: 10px;
+    overflow: hidden;
+    background: center / 100% auto;
+}
+
+.card_head,
+.card__footer{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 24px;
+}
+.card__title {
+    font-size: 20px;
+    padding-right: 8px;
+}
+
+.card__footer {
+    margin-top: 28px;
+}
+.card__gram {
+    font-size: 12px;
+}
+.card .button {
+    padding: 10px 36px;
+    border-radius: 8px;
+    color: var(--dark);
+    font-weight: 300;
 }
