@@ -1,65 +1,65 @@
-@import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@300;400;500;600;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Fredoka:wght@300;400;500;600;700&display=swap");
 
 :root {
-    /* Colors */
-    --primary: #FDB827;
-    --dark: #233506;
-    --ligth: #FFF;
-    --bg-color: #FFF9F2;
-    --secondary: #FF800B;
+  /* Colors */
+  --primary: #fdb827;
+  --dark: #233506;
+  --ligth: #fff;
+  --bg-color: #fff9f2;
+  --secondary: #ff800b;
 
-    /* Sizes */
-    --content_width: 1202px;
+  /* Sizes */
+  --content_width: 1202px;
 }
 
 * {
-    margin: 0;
-    box-sizing: border-box;
+  margin: 0;
+  box-sizing: border-box;
 }
 
 body {
-    font-family: 'Fredoka', sans-serif;
-    background-color: #fff;
-    color: var(--dark);
-    font-size: 18px;
+  font-family: "Fredoka", sans-serif;
+  background-color: #fff;
+  color: var(--dark);
+  font-size: 18px;
 }
 
 a {
-    color: var(--dark);
-    text-decoration: none;
+  color: var(--dark);
+  text-decoration: none;
 }
 
 /* Layout */
 .content {
-    max-width: var(--content_width);
-    width: 100%;
-    padding: 0 16px;
-    margin: 0 auto;
+  max-width: var(--content_width);
+  width: 100%;
+  padding: 0 16px;
+  margin: 0 auto;
 }
 
 .header {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 46px 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 46px 0;
 }
 
 .header__actions {
-    display: flex;
-    align-items: center;
+  display: flex;
+  align-items: center;
 }
 
 .header__actions .button:not(:last-child) {
-    margin-right: 12px;
+  margin-right: 12px;
 }
 
 .menu {
-    display: flex;
-    align-items: center;
+  display: flex;
+  align-items: center;
 }
 
 .menu a:not(:last-child) {
-    margin-right: 46px;
+  margin-right: 46px;
 }
 
 /* FirstScreen - Block 1 */
@@ -68,8 +68,6 @@ a {
   min-height: 100vh;
   background-color: var(--bg-color);
   display: flex;
-  
-
 }
 
 .first-screen > * {
@@ -78,155 +76,153 @@ a {
 }
 
 .first-screen__bg-segment {
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    right: 0;
-    width: 33%;
-    z-index: 0;
-    background-color: var(--primary);
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  width: 33%;
+  z-index: 0;
+  background-color: var(--primary);
 }
 
 .first-screen__bg-segment img {
-    position: absolute;
-    top: 12%;
-    right: 0;
-    width: 280%;
+  position: absolute;
+  top: 12%;
+  right: 0;
+  width: 280%;
 }
 
 .first-screen .content {
-    display: flex;
-    flex-direction: column;
+  display: flex;
+  flex-direction: column;
 }
 
 .first-screen__content {
-    max-width: 535px;
-    margin: auto 0;
-    padding-bottom: 64px;
+  max-width: 535px;
+  margin: auto 0;
+  padding-bottom: 64px;
 }
 
-.first-screen_title{
-    font-size: 84px;
-    line-height: 100px;
+.first-screen_title {
+  font-size: 84px;
+  line-height: 100px;
 }
 
-.first-screen_title span{
-    color:var(--primary);
+.first-screen_title span {
+  color: var(--primary);
 }
 
-.first-screen__description{
-    line-height: 1.7em;
-    margin-top: 30px;
-    margin-bottom: 40px;
+.first-screen__description {
+  line-height: 1.7em;
+  margin-top: 30px;
+  margin-bottom: 40px;
 }
 
 /* Products Block 2*/
-.products{
-    padding: 120px 0;
+.products {
+  padding: 120px 0;
 }
 
-.products__cards{
-    display: flex;
-    flex-wrap: wrap;
-    margin: -14px;
-    margin-top: 50px;
+.products__cards {
+  display: flex;
+  flex-wrap: wrap;
+  margin: -14px;
+  margin-top: 50px;
 }
-.products__cards .card{
-    margin: 21px 14px;
+.products__cards .card {
+  margin: 21px 14px;
 }
-
 
 /* UIElements */
 .logo {
-    font-size: 36px;
-    font-weight: 600;
+  font-size: 36px;
+  font-weight: 600;
 }
 
 .logo span {
-    color: var(--secondary);
+  color: var(--secondary);
 }
 
 /* Button */
 .button {
-    cursor: pointer;
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    padding: 16px 22px;
-    background-color: var(--primary);
-    color: var(--ligth);
-    font-size: 18px;
-    line-height: 18px;
-    border-radius: 50px;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 16px 22px;
+  background-color: var(--primary);
+  color: var(--ligth);
+  font-size: 18px;
+  line-height: 18px;
+  border-radius: 50px;
 }
 
 .button_light {
-    background-color: var(--ligth);
-    color: var(--secondary);
+  background-color: var(--ligth);
+  color: var(--secondary);
 }
 
 .button_with-icon i {
-    font-size: 1.2em;
-    margin-left: 18px;
-
+  font-size: 1.2em;
+  margin-left: 18px;
 }
 
-.button_icon-square{
-    --size:50px;
-    padding: 0;
-    width: var(--size);
-    height: var(--size);
-    line-height: var(--size);
-    border-radius: 15px;
-    font-size: 20px;
-    text-align: center;
+.button_icon-square {
+  --size: 50px;
+  padding: 0;
+  width: var(--size);
+  height: var(--size);
+  line-height: var(--size);
+  border-radius: 15px;
+  font-size: 20px;
+  text-align: center;
 }
 
 .button_xl {
-    padding: 22px 40px;
+  padding: 22px 40px;
 }
 
 /* Title */
-.title{
-    font-size: 70px;
-    line-height: 82px;
-    font-weight: 600;
+.title {
+  font-size: 70px;
+  line-height: 82px;
+  font-weight: 600;
 }
 /* Card */
-.card{
-    --size: 270px;
-    width: var(--size);
+.card {
+  --size: 270px;
+  width: var(--size);
 }
 
 .card_img {
-    width: var(--size);
-    height: calc(var(--size) * 0.66);
-    border-radius: 10px;
-    overflow: hidden;
-    background: center / 100% auto;
+  width: var(--size);
+  height: calc(var(--size) * 0.66);
+  border-radius: 10px;
+  overflow: hidden;
+  background: center / 100% auto;
 }
 
 .card_head,
-.card__footer{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    margin-top: 24px;
+.card__footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 24px;
 }
 .card__title {
-    font-size: 20px;
-    padding-right: 8px;
+  font-size: 20px;
+  padding-right: 8px;
 }
 
 .card__footer {
-    margin-top: 28px;
+  margin-top: 28px;
 }
 .card__gram {
-    font-size: 12px;
+  font-size: 12px;
 }
 .card .button {
-    padding: 10px 36px;
-    border-radius: 8px;
-    color: var(--dark);
-    font-weight: 300;
+  padding: 10px 36px;
+  border-radius: 8px;
+  color: var(--dark);
+  font-weight: 300;
 }
