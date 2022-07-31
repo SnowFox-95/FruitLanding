@@ -215,6 +215,37 @@ a {
   opacity: 67%;
 }
 
+/* About Us - Block 4 */
+
+.about {
+  position: relative;
+  padding: 100px 0;
+}
+
+.bg-circle {
+  position: absolute;
+  top:50%;
+  right: 18px;
+  margin-top:calc(var(--size) / -2);
+   
+}
+
+.content {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.about__description {
+}
+
+.button {
+}
+
+.about__img {
+  margin-left: 126px;
+}
+
 /* UIElements */
 
 .logo {
