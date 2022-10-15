@@ -1,10 +1,10 @@
 @font-face {
     font-family: 'fruit-icon-font';
-    src: url('../fonts/fruit-icon-font.eot?884zgs');
-    src: url('../fonts/fruit-icon-font.eot?884zgs#iefix') format('embedded-opentype'),
-    url('../fonts/fruit-icon-font.ttf?884zgs') format('truetype'),
-    url('../fonts/fruit-icon-font.woff?884zgs') format('woff'),
-    url('../fonts/fruit-icon-font.svg?884zgs#fruit-icon-font') format('svg');
+    src: url('fonts/fruit-icon-font.eot?884zgs');
+    src: url('fonts/fruit-icon-font.eot?884zgs#iefix') format('embedded-opentype'),
+    url('fonts/fruit-icon-font.ttf?884zgs') format('truetype'),
+    url('fonts/fruit-icon-font.woff?884zgs') format('woff'),
+    url('fonts/fruit-icon-font.svg?884zgs#fruit-icon-font') format('svg');
     font-weight: normal;
     font-style: normal;
     font-display: block;
