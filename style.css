@@ -248,18 +248,47 @@ a {
 
 /* Review Block 5*/
 .review {
-  padding: 140px 0;
+  padding: 110px 0;
   text-align: center;
   background-color: var(--bg-color);
   display: flex;
   justify-content: center;
 }
-.review .content{
+.review .content {
 }
 .review .slider {
   margin: 40px auto 0;
 }
 
+.customer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.customer__review {
+  line-height: 1.7em;
+  margin-bottom: 34px;
+}
+.customer__info {
+  display: flex;
+  align-items: center;
+}
+.customer__avatar {
+}
+.customer__user {
+  margin-left: 20px;
+  text-align: left;
+}
+.customer__user strong {
+  display: block;
+  font-weight: 500;
+  opacity: 0.8;
+  margin-bottom: 4px;
+}
+.customer__user span {
+  opacity: 0.68;
+  font-weight: 300;
+}
 /* UIElements */
 
 .logo {
@@ -401,7 +430,7 @@ a {
   top: 50%;
   margin-top: calc(var(--size) / -2);
   width: var(--size);
-  height:var(--size);
+  height: var(--size);
   border-radius: var(--size);
   display: flex;
   align-items: center;
@@ -410,37 +439,45 @@ a {
   background-color: var(--ligth);
   border: 1px solid var(--primary);
 }
-.slider__button:hover{
+.slider__button:hover {
   color: var(--ligth);
   background-color: var(--primary);
   border-color: var(--ligth);
-} 
-.slider__button_prev{
-  left: 0;
-  margin-left: calc(var(--size)/-2);
 }
-.slider__button_next{
+.slider__button_prev {
+  left: 0;
+  margin-left: calc(var(--size) / -2);
+}
+.slider__button_next {
   right: 0;
-  margin-right: calc(var(--size)/-2);
+  margin-right: calc(var(--size) / -2);
 }
 
-.slider__item {
+.slider__content,
+.slider__bg-block {
   --radius: 64px;
   position: relative;
   min-height: 368px;
   background-color: var(--ligth);
   border-radius: var(--radius);
-  box-shadow: 
-  0 2px 15px rgba(0,0,0,0.03),
-  0 17px 121px rgba(0,0,0,0.06);
+  box-shadow: 0 2px 15px rgba(0, 0, 0, 0.03), 0 17px 121px rgba(0, 0, 0, 0.06);
 }
-.slider__item_bg-1, 
-.slider__item_bg-2 {
-  display: none;
+.slider__bg-block {
+  /*display: none;*/
+  --width: 86%;
   position: absolute;
   top: 0;
   left: 50%;
+  z-index: -1;
+  width: var(--width);
+  margin-left: calc(var(--width) / -2);
+  bottom: -25px;
 }
-.slider__item_bg-1{
-  width: 70%;
+.slider__bg-block_2 {
+  --width: 72%;
+  bottom: -45px;
+  z-index: -2;
+}
+.slider__item {
+  padding: 88px 110px 68px;
 }
